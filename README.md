@@ -1,2 +1,2 @@
 md
-# Farqonzeeo.dev
+# Farqonzero.dev
