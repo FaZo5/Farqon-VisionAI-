@@ -44,12 +44,9 @@ More details can be found here:
 *   [Google AI Gemini API Documentation](https://ai.google.dev/docs)
 
 Once you have your API Key and (if applicable) Search Engine ID, add them to your `.env` file for local development:
-```env
-GOOGLE_API_KEY=AIzaSyC_AjAWxv8ez_mE9ErqsQs-T2RnZzDQdT8
-GOOGLE_CSE_ID=d2bfcc569e7c94c95
-```
 
-Replace `AIzaSyC_AjAWxv8ez_mE9ErqsQs-T2RnZzDQdT8` with your actual Google API Key and `d2bfcc569e7c94c95` with your Custom Search Engine ID. The `GOOGLE_API_KEY` is used by Genkit for Google AI models, and both are used by the `searchInternetTool`.
+
+Replace `AIzaSyC_AjAWxv8ez_mE9ErqsQs-T2RnZzDQdT8` with your actual Google API Key and ` with your Custom Search Engine ID. The `GOOGLE_API_KEY` is used by Genkit for Google AI models, and both are used by the `searchInternetTool`.
 
 ## API Quotas and Rate Limiting
 
@@ -104,15 +101,8 @@ Netlify offers excellent support for Next.js applications.
     *   Before deploying (or after the first deploy), go to your site's settings on Netlify.
     *   Navigate to "Site configuration" > "Build & deploy" > "Environment".
     *   Click "Edit variables" and add the following, ensuring you use your actual values:
-        *   `NEXT_PUBLIC_FIREBASE_API_KEY="AIzaSyBiU4cHaWta9JpwWr7wd3oN-UnNlwSD5M8"`
-        *   `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN="farqon-visionai.firebaseapp.com"`
-        *   `NEXT_PUBLIC_FIREBASE_PROJECT_ID="farqon-visionai"`
-        *   `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET="farqon-visionai.firebasestorage.app"`
-        *   `NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID="834196735834"`
-        *   `NEXT_PUBLIC_FIREBASE_APP_ID="1:834196735834:web:69d9b9e3a0386222c7d563"`
-        *   `NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID="G-NL64P3Z2Q3"`
-        *   `GOOGLE_API_KEY="AIzaSyC_AjAWxv8ez_mE9ErqsQs-T2RnZzDQdT8"` (Crucial for Genkit Google AI models and Google Custom Search)
-        *   `GOOGLE_CSE_ID="d2bfcc569e7c94c95"` (Crucial for Google Custom Search tool)
+        *   ` (Crucial for Genkit Google AI models and Google Custom Search)
+        *   ` (Crucial for Google Custom Search tool)
     *   `NEXT_PUBLIC_` prefixed variables are made available client-side. Server-side variables like `GOOGLE_API_KEY` are also handled correctly by Netlify for your Next.js functions.
 8.  **Deploy Site:** Click "Deploy site" (or "Trigger deploy" if settings were changed after initial setup). Netlify will build and deploy your application.
 9.  **Custom Domain (Optional):** After deployment, you can set up a custom domain in your site's "Domain management" settings on Netlify.
